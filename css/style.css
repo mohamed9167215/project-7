@@ -1,0 +1,504 @@
+body{
+    background-color: #000;
+    overflow-x: hidden ;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+a:hover{
+    text-decoration: none;
+    outline: none;
+}
+
+.list-items ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px 25px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgba(153, 153, 238, 1);
+   /* margin-top: -16px; */
+    padding-top: 12px;
+ /*   padding-bottom: 12px; */
+    transition: all 0.5s ease-in-out;
+}
+
+.brand-name{
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    left: -60px;
+    top: -8px;
+}
+@media(max-width:890px){
+    .brand-name{
+        left: -7px;
+    }
+}
+.list-items ul a{
+    color: #000;
+}
+
+.list-items ul li{
+    position: relative;
+}
+
+.list-items .active{
+    color: red;
+}
+.list-items li:not(.brand-name):before{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 28px;
+    transition: all 0.4s ease-in-out ;
+}
+.list-items li:hover::before{
+    width: 100%;
+ 
+}
+.search-bar{
+    text-align: right;
+}
+.search-bar input{
+    outline: none;
+    border: 1px solid #000;
+    width: 321px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.search-bar i{
+    background-color: red;
+    padding: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin-left: -4px;
+}
+.search-bar input::placeholder{
+    padding-left: 10px;
+}
+
+
+/******* Framework*******/
+.sr{
+    color: #DDD;
+    background-color: rgb(228, 12, 12);
+    padding: 1rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    max-width: 250px;
+    cursor: pointer;
+    outline: none;
+   margin: 0 auto;
+}
+/******* Framework*******/
+
+
+
+.Top-5 img{
+    max-width: 100%;
+    height: 170px;
+}
+
+.action-games h2 , 
+.Sport-games h2 ,
+.Racing-games h2 ,
+.Classic-games h2{
+    max-width: 350px;
+    text-align: center;
+}
+
+.action-games , 
+.Sport-games , 
+.Racing-games ,
+.Classic-games{
+    margin-bottom: 160px;
+    margin-top: 35px;
+}
+
+
+
+.action-games h2, 
+.Sport-games h2 ,
+.Racing-games h2 ,
+.Classic-games h2{
+    margin-bottom: 28px;
+}
+
+.action-games  .box-detailes , 
+.Sport-games  .box-detailes, 
+.Racing-games  .box-detailes,
+.Classic-games .box-detailes{
+    width:82%;
+    background-color: #DDD;
+    padding:  10px 10px;
+}
+.action-games  .box-detailes span ,
+.Sport-games   .box-detailes span ,
+.Racing-games  .box-detailes span ,
+.Classic-games .box-detailes span {
+    color: blue;
+    font-weight: 700;
+}
+.action-games .box-detailes h5 ,
+.Sport-games .box-detailes h5 ,
+.Racing-games .box-detailes h5 ,
+.Classic-games .box-detailes h5{
+    color:#000
+}
+.main-image{
+    margin-top: 28px;
+    color: #FFF;
+    font-size: large;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.System-Requirements{
+    margin-top: 32px;
+    text-align: left    ;
+}
+.System-Requirements h4{
+   margin-left: 20px;
+}
+.System-Requirements li span{
+    color: rgb(8, 8, 221);
+}
+.link-one{
+    color: #FFF;
+    border: 2px solid #F00;
+    border-radius: 50%;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 40px auto;
+    font-size: 50px;
+    line-height: 100px;
+   
+}
+
+.link-one p{
+    text-align: center;
+}
+.link-two p{
+   color: #FFF;
+   text-align: center;
+   font-weight: 700;
+   font-size: 50px;
+   margin-top: 28px;
+}
+.link-five{
+    display: block;
+    margin: 110px auto;
+}
+main{
+    color: #FFF;
+    padding: 10px;
+     margin-top: 119px; 
+     letter-spacing: 1px; 
+     font-size: 28px; 
+     text-align: center;
+}
+
+
+.more-links{
+    padding-top: 50px;
+    
+}
+.more-links h3{
+    font-size: large;
+    margin-bottom: 60px ;
+}
+
+
+.more-links .media{
+    margin-bottom: 28px;
+}
+ .media-body{
+    margin-left: 20px;
+}
+.media-body h4{
+    color: red;
+}
+.media-body span{
+    padding-right: 20px;
+    color: rgb(33, 33, 206);
+    cursor: pointer;
+}
+.box-left{
+    display: flex
+}
+sidebar{
+    position: fixed;
+    left: -365px;
+    top: -1px;
+    min-height: 100vh;
+    width: 340px;
+    background-color: #333;
+    font-size: large;
+    font-weight: 600;
+    color: #DDD;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;   
+}
+sidebar img{
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+sidebar .itmes{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    
+}
+sidebar .itmes ul li{ 
+    margin-bottom: 9px;
+}
+
+sidebar .soical-media .contact-us{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: red;
+    margin-top: 25px;
+}
+
+
+sidebar .soical-media .contact-us li{
+    padding-right: 25px;
+    cursor: pointer;
+}
+sidebar .toggle i{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #DDD;
+    height: 36px;
+    color: red;
+    padding-top: 9px;
+    cursor: pointer;
+}
+
+@media(min-width:991px){
+    sidebar{
+        display: none;
+
+    }
+}
+
+
+
+/************************************ Footer Start *************************************/
+
+footer{
+    padding-top: 20px;
+    outline: none;
+    margin-top: -110px;
+}
+footer h4{
+    color: #DDD;
+}
+
+footer ul li a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer li{
+    color: #DDD;
+}
+
+footer input{
+    border: none;
+    width: 200px;
+    padding-left: 10px;
+    height: 32px;
+    outline: none;
+}
+
+
+
+footer hr{
+    width: 100%;
+    border: 1px solid #DDD
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************ Footer End *************************************/
+
+
+
+
+
+/* media */
+
+@media(max-width:767px){
+    .list-items{
+        display: none;
+    }
+    .Top-Head .brand-name p{
+        display: block;
+        text-align: center;
+    }
+    .search-bar{
+        text-align: center;
+    }
+}
+
+
+
+@media(min-width:768px){
+    .open{
+        display: none;
+    }
+    
+}
+@media(max-width:991px){
+    .action-games .row div img ,
+    .Sport-games .row div img ,
+    .Racing-games .row div img ,
+    .Classic-games .row div img
+    { 
+     
+        max-width: 100%;
+    }
+    .box-left{
+        display: block
+    }
+    .more-links .media{
+        margin-bottom: 50px;
+    }
+    
+ 
+}
+
+@media(max-width:767px){
+    .action-games .row div img , 
+    .Sport-games .row div img ,
+    .Racing-games .row div img , 
+    .Classic-games .row div img{
+        max-width: 110%;
+    }
+}
+
+
+@media(min-width:992px) and (max-width:1199px){
+    .action-games .box-detailes ,
+     .Sport-games .box-detailes ,
+    .Racing-games .box-detailes ,
+    .Classic-games .box-detailes{
+        width:100%;
+        background-color: #DDD;
+        padding:  10px 10px;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .action-games .box-detailes , 
+    .Sport-games .box-detailes ,
+    .Racing-games .box-detailes ,
+    .Classic-games .box-detailes{
+        width:100%;
+    }
+    .action-games .box-detailes h5 ,
+    .Sport-games .box-detailes h5 ,
+    .Racing-games .box-detailes h5 ,
+    .Classic-games .box-detailes h5{
+        color: #000;
+        font-size: 15px;
+    }
+}
+@media(min-width:576px) and (max-width:767px){
+    .action-games .box-detailes ,
+    .Sport-games .box-detailes ,
+    .Racing-games .box-detailes ,
+    .Classic-games .box-detailes {
+        width:110%;
+    }
+    .action-games .box-detailes h5,
+    .Sport-games .box-detailes h5 ,
+    .Racing-games .box-detailes h5 ,
+    .Classic-games  .box-detailes h5{
+        color: #000;
+        font-size: 14px;
+    }
+    .container{
+        min-width: 551px;
+    }
+}
+
+
+
+@media(max-width:575px){
+    .action-games img , 
+    .Sport-games img , 
+    .Racing-games img , 
+    .Classic-games img  {
+        margin: 0 auto;
+        display: block
+    }
+    .action-games div ,
+    .Sport-games div ,
+    .Racing-games div ,
+    .Classic-games  div{
+        margin-bottom: 35px;
+    }
+    .action-games .box-detailes ,
+    .Sport-games .box-detailes ,
+    .Racing-games .box-detailes, 
+    .Classic-games .box-detailes {
+        width:287px;
+        margin: 0 auto;
+    }
+    main{
+         font-size: 21px;
+    }
+    
+   
+}
+
+
+
+
+
+@media(max-width:911px){
+    .main-image{
+        text-align: center;
+        display: block
+    }
+    .main-image img{
+        margin-bottom: 28px;
+    }
+}
+
+
+@media(min-width:911px){
+    .main-image{
+       margin-left: 68px;
+    }
+}
